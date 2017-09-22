@@ -9,7 +9,7 @@ module.exports = function zeros(str) {
     if (arr[i].endsWith('!!')) {
       arr[i] = arr[i].slice(0, -2);
       b = +arr[i];
-      while (b) {
+      while (b>4) {
         if (b%5 === 0) count++;
         b -= 2;
       }
